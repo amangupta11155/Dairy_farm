@@ -1,0 +1,116 @@
+body{
+	background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(../2.jpg);
+	height: 100vh;
+	background-size: cover;
+	background-position: center;
+
+}
+ul{
+	float: right;
+	list-style: none;
+	margin-top: 25px; 
+}
+
+ul li{
+	display: inline-block;
+} 
+
+ul li a{
+	text-decoration: none;
+	color: #fff;
+	padding: 5px 20px;
+	border: 1px solid transparent;
+	transition: 0.6s ease;
+}
+
+ul li a:hover{
+	background-color: #fff;
+	color: #000;
+}
+
+ul li.active a:hover{
+	background-color: #fff;
+	color: #000;
+}
+
+.logo img{
+	
+	float: left;
+	width: 100px;
+	height: 75px;
+}
+.main{
+	max-width: 1200px;
+	margin: auto;
+}
+
+.login-page{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%); 
+}
+
+.form{
+	position: relative;
+	z-index: 1;
+	background: rgba(7, 40, 195, 0.8);
+	max-width: 360px;
+	margin: 0 auto 100px;
+	padding: 45px;
+	text-align: center;
+}
+.form input{
+	font-family: "Roboto",sans-serif;
+	outline: 1;
+	background: #f2f2f2;
+	width: 100%
+	margin: 0 0 15px;
+	padding: 18px;
+	box-sizing: border-box;
+	font-size: 15px;  
+}
+
+.form button{
+	font-family: "Roboto",sans-serif;
+	text-transform: uppercase;
+	outline: 0; 
+	background: #4CAF50;
+	width: 100%
+	border: 0;
+	padding: 15px;
+	color: #ffffff;
+	cursor: pointer;
+}
+
+.form button:hover,.form button:active{
+	background: #43A047;
+} 
+
+.form .message{
+	margin: 15px 0 0;
+	color: aliceblue;
+	font-size: 12px;
+} 
+
+.form .message{
+	color: #4CAF50;
+	text-decoration: none;
+}
+
+.form .register-form{
+	display: none;
+}
+
+.footer {
+   position: fixed;
+   left: 0; 	
+   bottom: 0;
+   width: 100%;
+   background-color: black;
+   color: white;
+   text-align: center;
+}
+#sticky-footer {
+  flex-shrink: none;
+}
